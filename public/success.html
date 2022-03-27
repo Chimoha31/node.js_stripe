@@ -1,11 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+<html>
+  <head>
+    <title>Thanks for your order!</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="client.js" defer></script>
+  </head>
+  <body>
+    <section>
+      <div class="product Box-root">
+        <div class="description Box-root">
+          <h3>You joined a starter plan</h3>
+        </div>
+      </div>
+      <form action="/create-portal-session" method="POST">
+        <input type="hidden" id="session-id" name="session_id" value="" />
+        <button id="checkout-and-portal-button" type="submit">
+          Confirm reciept
+        </button>
+      </form>
+    </section>
+  </body>
 </html>
